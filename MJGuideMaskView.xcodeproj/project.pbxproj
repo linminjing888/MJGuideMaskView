@@ -13,6 +13,7 @@
 		604ADC3C210F2B5500053950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604ADC3B210F2B5500053950 /* Assets.xcassets */; };
 		604ADC3F210F2B5500053950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604ADC3D210F2B5500053950 /* LaunchScreen.storyboard */; };
 		604ADC42210F2B5500053950 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 604ADC41210F2B5500053950 /* main.m */; };
+		604ADC4B210F2BF000053950 /* MXRGuideMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 604ADC4A210F2BF000053950 /* MXRGuideMaskView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		604ADC3E210F2B5500053950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		604ADC40210F2B5500053950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		604ADC41210F2B5500053950 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		604ADC49210F2BF000053950 /* MXRGuideMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXRGuideMaskView.h; sourceTree = "<group>"; };
+		604ADC4A210F2BF000053950 /* MXRGuideMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXRGuideMaskView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		604ADC31210F2B5200053950 /* MJGuideMaskView */ = {
 			isa = PBXGroup;
 			children = (
+				604ADC48210F2BB200053950 /* MJGuideMaskView */,
 				604ADC32210F2B5200053950 /* AppDelegate.h */,
 				604ADC33210F2B5200053950 /* AppDelegate.m */,
 				604ADC35210F2B5200053950 /* ViewController.h */,
@@ -67,6 +71,15 @@
 				604ADC3D210F2B5500053950 /* LaunchScreen.storyboard */,
 				604ADC40210F2B5500053950 /* Info.plist */,
 				604ADC41210F2B5500053950 /* main.m */,
+			);
+			path = MJGuideMaskView;
+			sourceTree = "<group>";
+		};
+		604ADC48210F2BB200053950 /* MJGuideMaskView */ = {
+			isa = PBXGroup;
+			children = (
+				604ADC49210F2BF000053950 /* MXRGuideMaskView.h */,
+				604ADC4A210F2BF000053950 /* MXRGuideMaskView.m */,
 			);
 			path = MJGuideMaskView;
 			sourceTree = "<group>";
@@ -142,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				604ADC37210F2B5200053950 /* ViewController.m in Sources */,
+				604ADC4B210F2BF000053950 /* MXRGuideMaskView.m in Sources */,
 				604ADC42210F2B5500053950 /* main.m in Sources */,
 				604ADC34210F2B5200053950 /* AppDelegate.m in Sources */,
 			);
@@ -285,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MJGuideMaskView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MJGuideMaskView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

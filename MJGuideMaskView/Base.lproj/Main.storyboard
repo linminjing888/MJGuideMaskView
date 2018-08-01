@@ -1,24 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lcD-j6-ca2"/>
+                        <viewControllerLayoutGuide type="bottom" id="XHu-RP-WpU"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是一个引导图" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cs-qw-RcS">
+                                <rect key="frame" x="95" y="140" width="125" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="VHb-1I-dhM"/>
+                                    <constraint firstAttribute="width" constant="125" id="izA-zc-e6d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.30253362099999997" blue="0.92220292680000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJI-Nw-Za8">
+                                <rect key="frame" x="40" y="285" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.59883039924221881" green="1" blue="0.61409942437877763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fFZ-AR-JjT"/>
+                                    <constraint firstAttribute="width" constant="100" id="mmO-Be-IGH"/>
+                                </constraints>
+                                <state key="normal" title="按钮">
+                                    <color key="titleColor" red="0.1843137255" green="0.72156862749999995" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liu" translatesAutoresizingMaskIntoConstraints="NO" id="3q6-e5-kqf">
+                                <rect key="frame" x="170" y="260" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="GpR-R0-sq9"/>
+                                    <constraint firstAttribute="height" constant="80" id="zGg-QU-5Wq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="6Cs-qw-RcS" firstAttribute="top" secondItem="lcD-j6-ca2" secondAttribute="bottom" constant="120" id="4RW-cw-5Ye"/>
+                            <constraint firstItem="VJI-Nw-Za8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="bFb-7X-FQW"/>
+                            <constraint firstAttribute="trailing" secondItem="3q6-e5-kqf" secondAttribute="trailing" constant="70" id="hEv-0N-Qe8"/>
+                            <constraint firstAttribute="trailing" secondItem="6Cs-qw-RcS" secondAttribute="trailing" constant="100" id="oE1-35-Eiu"/>
+                            <constraint firstItem="3q6-e5-kqf" firstAttribute="centerY" secondItem="VJI-Nw-Za8" secondAttribute="centerY" id="syq-O8-Twm"/>
+                            <constraint firstItem="VJI-Nw-Za8" firstAttribute="top" secondItem="6Cs-qw-RcS" secondAttribute="bottom" constant="120" id="ujm-mF-sz6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bgImg" destination="3q6-e5-kqf" id="JtG-aA-421"/>
+                        <outlet property="tapBtn" destination="VJI-Nw-Za8" id="6G4-Qa-BGB"/>
+                        <outlet property="textLabel" destination="6Cs-qw-RcS" id="h6o-Tq-U4J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116" y="118.29085457271366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="liu" width="150" height="150"/>
+    </resources>
 </document>
